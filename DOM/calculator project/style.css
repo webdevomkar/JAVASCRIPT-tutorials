@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main h1{
+  position: absolute;
+  top: 6%;
+}
+#mainbody{
+  height: 60%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#mainbody #entryspot{
+  height: 10%;
+  width: 60%;
+  margin-bottom: 50px;
+}
+#mainbody .row .btn
+{
+  margin-bottom: 20px;
+  margin-right: 10px;
+  width: 42px;
+  height: 42px;
+}
+ 

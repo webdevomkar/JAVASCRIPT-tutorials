@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body style="background-color: #212121; color:white">
+  <ul class="language">
+    <li>js</li>
+  </ul>
+</body>
+
+
+
+  <script>
+    function addlistitem(langname){
+      const li = document.createElement("li");
+      li.innerHTML=`${langname}`
+      document.querySelector('.language').appendChild(li)
+    }
+    addlistitem("py")
+    addlistitem("c++")
+    addlistitem("ruby")
+
+
+   //this is more optimized way to add
+
+
+    function optimizedaddlistitem(langname){
+        const li= document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector(".language").appendChild(li)
+
+    }
+    optimizedaddlistitem("golang")
+    optimizedaddlistitem("ms")
+
+
+//edit or replace
+
+const secondreplace = document.querySelector("li:nth-child(2)")
+//console.log(secondreplace)
+const newli= document.createElement('li')
+newli.textContent="rust"
+secondreplace.replaceWith(newli)
+
+//removeing 
+
+const removelist= document.querySelector("li:last-child")
+removelist.remove()
+
+
+
+
+
+
+
+  </script>
+
+</html>
